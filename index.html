@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>The Bagel Pot - Chennai, Bagel, Bagels, Pasta, Handmade, Fresh, Rosemilk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Handmade Bagels and Wheat Pastas freshly made everyday at OMR Food Street Ambattur Chennai">
+    <meta name="keywords" content="Handmade Bagels, Crafted Wheat Pastas, HandCrafted, Helathy, Chennai, OMR Food Street, Ambattur, RoseMilk, Pancake, Pureed Soups, Chennai Bagels, Bagels Chennai, Paz-de-cup, Bagel, Bagel Chennai, Chennai Bagel, Bagles in Chennai, Bagel in Chennai">
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <style type="text/css">
+      @font-face {
+        font-family: 'Cursive-Alura';
+        src: url(Allura-Regular.ttf);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height:100%;
+        background-color: rgba(0,0,0,0.9);
+        font-family: 'Roboto';
+        white-space: nowrap;
+      }
+      .range-text {
+        width: 25px;
+      }
+      circle {
+        cursor: move;
+      }
+      .magic-vertex {
+        fill-opacity: 0;
+        stroke: #999;
+        stroke-opacity: 0;
+      }
+      .vertex {
+        /*fill: #1f77b4 !important;*/
+        fill: #c97b0d !important;
+        fill-opacity: 1;
+        stroke: #999;
+        stroke-opacity: .5;
+      }
+      .link {
+        /*stroke: #999;*/
+        stroke-opacity: 1;
+        stroke: #c97b0d !important;
+      }
+      #intro {
+        position: fixed;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, 0);
+        font-family: Roboto;
+        font-size: 20px;
+        color: white;
+        display: none;
+      }
+      #head {
+        position: fixed;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%, 0);
+        font-family: Cursive-Alura;
+        font-weight: bold;
+        font-size: 25px;
+        color: white;
+        display: none;
+      }
+      #message {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 15%;
+        color: white;
+        display: none;
+      }
+      .cr {
+        position: fixed;
+        bottom: 0%;
+        font-size: 12px;
+        color: white;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      <script type="text/x-handlebars" data-template-name="application">
+        {{#view App.ApplicationView}}
+        {{/view}}
+      </script>
+    </div>
+    <div>
+      <div id="intro">
+          <p>Eventually, everything connects!</p>
+      </div>
+       <div id="head">
+        <p>The Bagel Pot</p>
+       </div>
+       <div id="message">
+          <span id="soon">
+                Now Open @ OMR Food Street, Ambattur, Chennai.
+          </span>
+       </div>
+       <div class="cr"><p>Copyright 2017-2018 by <i>The Bagel Pot</i></p></div>
+      <div id="chart" ></div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.rc.1/handlebars.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.0.0-pre.2/ember-1.0.0-pre.2.min.js"></script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="jq.caret.js"></script>
+    <script type="text/javascript">
+      window.animationStarted = function() {
+          $('#intro').fadeIn();
+          $('#message').fadeOut();
+          $('#head').fadeOut();
+      };
+      window.animationCompleted = function() {
+          $('#intro').fadeOut();
+          $('#message').fadeIn();
+          $('#head').fadeIn();
+      }
+    </script>
+    <script type="text/javascript" src="app.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118905290-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118905290-1');
+</script>
+
+<div style="display:none;color:black;width:10px;position:fixed;top:0px;">Handmade Bagels, Handcrafted Pastas, Chennai Bagles, Chennai Bagel, Bagel, Healthy Food </div>
+  </body>
+</html>
